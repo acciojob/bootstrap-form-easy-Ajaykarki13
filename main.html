@@ -14,57 +14,62 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-<title>Internship form</title>
+	<title>Internship form</title>
 
 </head>
 
 <body>
-	<h1 style="text-align: center; font-weight: 700; margin-top: 1.5rem; margin-bottom: 2rem;">Internship Form</h1>
-<div class="container-fluid">
-	<form class="row g-3 needs-validation" novalidate>
+	
+
+	<form class="row g-3 needs-validation m-3" novalidate>
+		<h1>Internship Form</h1>
 		<div class="col-md-4">
-		  <label for="first name" class="form-label">First name</label>
+		  <label for="first-name-input" class="form-label">First Name</label>
 		  <input type="text" class="form-control" id="first-name-input" required>
 		  <div class="invalid-feedback">
-			First name required
+			First name required!
 		  </div>
 		</div>
 		<div class="col-md-4">
-		  <label for="last name" class="form-label">Last name</label>
-		  <input type="text" class="form-control" id="last-name-input"  required>
+		  <label for="last-name-input" class="form-label">Last Name</label>
+		  <input type="text" class="form-control" id="last-name-input" required>
 		  <div class="invalid-feedback">
-			Last name required
+			Last name required!
 		  </div>
 		</div>
 		<div class="col-md-4">
-		  <label for="email" class="form-label">Email Address</label>
+		  <label for="email-input" class="form-label">Email Address</label>
 		  <div class="input-group has-validation">
-			<input type="email" class="form-control"placeholder="xyz@abc.com" id="email-input" aria-describedby="inputGroupPrepend" required>
+			<!-- <span class="input-group-text" id="inputGroupPrepend">@</span> -->
+			<input type="email" class="form-control" id="email-input" aria-describedby="inputGroupPrepend" placeholder="xyz@abc.com" required>
 			<div class="invalid-feedback">
-			  Email required.
+				Email required!
 			</div>
 		  </div>
 		</div>
 		<div class="col-md-6">
-		  <label for="college" class="form-label">College</label>
+		  <label for="college-input" class="form-label">College</label>
 		  <input type="text" class="form-control" id="college-input" required>
 		  <div class="invalid-feedback">
 			Please provide a valid college.
 		  </div>
 		</div>
 		<div class="col-md-3">
-		  <label for="year" class="form-label">Graduation Year</label>
-		  <select class="form-select"  required>
+		  <label for="grad-year-select" class="form-label">Graduation Year</label>
+		  <select class="form-select" id="grad-year-select" required>
 			<option selected disabled value="">Choose...</option>
-			<option>2020</option><option>2021</option><option>2022</option><option>2023</option>
+      		<option>2020</option>
+			<option>2021</option>
+			<option>2022</option>
+			<option>2023</option>
 		  </select>
 		  <div class="invalid-feedback">
-			Please select a valid Graduation year.
+			Please select a valid Graduation Year.
 		  </div>
 		</div>
 		<div class="col-md-3">
-		  <label for="rollno" class="form-label">Roll No.</label>
-		  <input type="number" class="form-control" id="roll-no-input" required>
+		  <label for="roll-no-input" class="form-label">Roll No.</label>
+		  <input type="text" class="form-control" id="roll-no-input" required>
 		  <div class="invalid-feedback">
 			Please provide a valid Roll no.
 		  </div>
@@ -72,7 +77,7 @@
 		<div class="col-12">
 		  <div class="form-check">
 			<input class="form-check-input" type="checkbox" value="" id="conditions-checkbox" required>
-			<label class="form-check-label" for="checkbox">
+			<label class="form-check-label" for="conditions-checkbox">
 			  Agree to terms and conditions
 			</label>
 			<div class="invalid-feedback">
@@ -84,7 +89,8 @@
 		  <button class="btn btn-primary" type="submit">Submit form</button>
 		</div>
 	  </form>
-</div>
+
+
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
